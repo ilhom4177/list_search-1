@@ -5,10 +5,5 @@ def find_max_index(data):
         data: list of numbers
     returns: index of maximum number in the list
     """
-    i=0 
-    max1=data[0]
-    while i<len(data):
-        if max1<data[i]:
-            max1=data[i]
-        i+=1
-    return data.index(max1) 
+    
+    return data.index(max(data)) 
