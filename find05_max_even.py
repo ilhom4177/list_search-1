@@ -11,10 +11,14 @@ def find_max_even(data):
         if data[i]%2==0:
             even.append(data[i])
         i+=1
-    j=0
-    max1=even[0]
-    while j<len(even):
-        if max1<even[j]:
-            max1=even[j]
-        j+=1
-    return max1
+    if even==[]:
+        return -1
+
+    mx = even[0]
+    i = 0
+    while i < len(even):
+        if even[i]>mx:
+            mx = [i]
+        i += 1
+
+    return mx
