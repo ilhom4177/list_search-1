@@ -5,5 +5,16 @@ def find_max_even(data):
         data: list of numbers
     returns: maximum even number in the list
     """
-    even_numbers = [x for x in data if x % 2 == 0]
-    return max(even_numbers)
+    i=0
+    even=[]
+    while i<len(data):
+        if data[i]%2==0:
+            even.append(data[i])
+        i+=1
+    j=0
+    max1=even[0]
+    while j<len(even):
+        if max1<even[j]:
+            max1=even[j]
+        j+=1
+    return max1
